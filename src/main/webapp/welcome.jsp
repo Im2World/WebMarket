@@ -1,4 +1,4 @@
-<%@page import="java.text.SimpleDateFormat"%>
+<%@ page import="java.text.SimpleDateFormat"%>
 <%@ page import="java.util.Date"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
@@ -7,21 +7,14 @@
     <!-- http://localhost:8080/WebMarket/welcome.jsp -->
 <head>
 <meta charset="UTF-8">
-<title>Bootstrap & JSP</title>
+<title>Bootstrap and JSP</title>
 <!-- Bootstrap cdn import -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <!-- 코드 빠르게 치기 꿀팁 -->
-    <!-- nav>.container>.navbar-header>a.navbar-brand -->
-    <nav class = "navbar navbar-expand navbar-dark bg-dark">
-        <div class="container">
-            <div class="navbar-header">
-              <a href="./welcome.jsp" class="navbar-brand">Home</a></div>
-        </div>
-    </nav>
-
+	<jsp:include page="menu.jsp"></jsp:include>
+	
     <!-- jumbotron -->
     <div class="mt-4 p-5 bg-primary text-white rounded">
       <!-- .container>h1.display-3 -->
@@ -45,8 +38,7 @@
       </div>
     </div>
 
-    <footer class="container">
-      <p>&copy; made by. Jung HaeIm</p>
-    </footer>
+	<jsp:include page="footer.jsp"></jsp:include>
+
 </body>
 </html>
